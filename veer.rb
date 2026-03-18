@@ -5,21 +5,21 @@
 class Veer < Formula
   desc "A live-diffing TUI for coding with AI"
   homepage "https://github.com/broothie/veer"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/broothie/veer/releases/download/v0.1.4/veer_0.1.4_darwin_amd64.tar.gz"
-      sha256 "8d1ca2236d4c509a2873d9ce190e6f6458cb879056a8362fcf8462d9e22616b6"
+      url "https://github.com/broothie/veer/releases/download/v0.1.5/veer_0.1.5_darwin_amd64.tar.gz"
+      sha256 "28be4bcc86184afe00c1e6fb66a5edf4b63fbd50e5ad67f27c57456fe45b5104"
 
       define_method(:install) do
         bin.install "veer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/broothie/veer/releases/download/v0.1.4/veer_0.1.4_darwin_arm64.tar.gz"
-      sha256 "b0208098279a1d8b457fadb60297debcbe04e3b9ab5a234a1b89fbd659b2b626"
+      url "https://github.com/broothie/veer/releases/download/v0.1.5/veer_0.1.5_darwin_arm64.tar.gz"
+      sha256 "e1763a52cdf16840db08e88416e1b4a7bdff6acbc10b37e3a1ad359371570a47"
 
       define_method(:install) do
         bin.install "veer"
@@ -29,15 +29,15 @@ class Veer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/broothie/veer/releases/download/v0.1.4/veer_0.1.4_linux_amd64.tar.gz"
-      sha256 "f0f6af20f743e8f7c76de2a93234f281bfd1663688f449831d45ea31e5d4c25c"
+      url "https://github.com/broothie/veer/releases/download/v0.1.5/veer_0.1.5_linux_amd64.tar.gz"
+      sha256 "13007cfe36feea77a9111f7cc60298316e2ffa36310786158f5ff0d0d52630db"
       define_method(:install) do
         bin.install "veer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/broothie/veer/releases/download/v0.1.4/veer_0.1.4_linux_arm64.tar.gz"
-      sha256 "9b7b9cd77df3750cd3a3347f1d1aaa2e0b1581e50eebdd908e89c2478f75ab0b"
+      url "https://github.com/broothie/veer/releases/download/v0.1.5/veer_0.1.5_linux_arm64.tar.gz"
+      sha256 "6565a344bc99a4acbdd8ebb14536105b7b87b302dcc37d62866185de291961f8"
       define_method(:install) do
         bin.install "veer"
       end
